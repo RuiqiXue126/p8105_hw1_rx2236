@@ -1,0 +1,21 @@
+---
+title: "p8105_hw1_rx2236"
+author: "Ruiqi Xue"
+date: "2023-09-19"
+output: github_document
+---
+
+
+
+```{r}
+library(moderndive)
+
+data("early_january_weather")
+
+  
+```
+
+
+
+
+
