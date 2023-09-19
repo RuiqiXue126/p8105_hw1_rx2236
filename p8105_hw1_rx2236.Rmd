@@ -16,6 +16,28 @@ data("early_january_weather")
 ```
 
 
+## Question 1
+### Data description
+This dataset has `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` variables/columns.
+The variables are `r names(early_january_weather)`.
+
+The `origin` variable is where the weather station locates. In this dataset, the only value for this variable is `r unique(early_january_weather["origin"])`.
+
+The `year`, `month`, `day` and `hour` variables are time of recording. 
+In this dataset, the only value of `year` is `r unique(early_january_weather["year"])` and the only value of `month` is `r unique(early_january_weather["month"])`. 
+Value of `day` ranges from `r range(early_january_weather["day"])` and value of `hour` ranges from `r range(early_january_weather["hour"])`. 
+
+So this dataset shows weather information of EWR airport in the first 15 days of January in 2013.
+
+The `temp` and `dewp` represent temperature and dewpoint in F. The average temperature is `r mean(early_january_weather$"temp")` F and temperature ranges from `r range(early_january_weather$temp)` F. 
+
+The `humid` variable represents the relative humidity which has an average value `r mean(early_january_weather$"humid")`.
+The `wind_dir`, `wind_speed` and `wind_gust` represent wind direction (in degrees), speed and gust speed (in mph).
+
+The `precip` represents the precipitation (in inches), `pressure` represents sea level pressure in millibars, and `visib` represents visibility (in miles).
+
+Finally, the `time_hour` is the date and hour of the recording as a POSIXct date.
+
 
 
 
