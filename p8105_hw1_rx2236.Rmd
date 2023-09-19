@@ -48,5 +48,7 @@ ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid)) + geo
 
 Apparent patterns in this plot include temperature fluctuates periodically, with a increasing tendency. When temperature rises, the humidity usually rises, and when temperature drops, the humidity drops as well in the overall picture. 
 
-
+```{r}
+ggsave("scatterplot.pdf")
+```
 
