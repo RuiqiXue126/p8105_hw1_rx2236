@@ -46,7 +46,7 @@ Finally, the `time_hour` is the date and hour of the recording as a POSIXct date
 ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid)) + geom_point()
 ```
 
-
+Apparent patterns in this plot include temperature fluctuates periodically, with a increasing tendency. When temperature rises, the humidity usually rises, and when temperature drops, the humidity drops as well in the overall picture. 
 
 
 
